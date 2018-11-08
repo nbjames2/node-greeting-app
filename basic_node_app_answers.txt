@@ -1,0 +1,11 @@
+1. What is a Node module?
+
+A - A node module is much like a class.  It is script that we can write modularly and import into any other node file via the 'require' code.
+
+2. What is the main difference between ```exports``` and ```module.exports```?
+
+A - exports is only a reference to module.exports therefore it doesn't overwrite all previous exports in a module when you use an assignment operation on it. exports should normally be used unless you want the export to be of a specific object type.
+
+3. Why is using ```exports``` recommended?
+
+A - exports should normally be used unless you want the export to be of a specific object type because it will do the same job but avoid error caused by assignement operations.
